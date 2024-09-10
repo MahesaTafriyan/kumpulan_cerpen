@@ -1,0 +1,167 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background-color: #000000; /* Warna latar hitam */
+    color: #00FFFF; /* Warna teks cyan */
+    line-height: 1.6;
+    background-image: url('galaxy-1.jpg'); /* Tempat untuk gambar background */
+    background-size: cover; /* Menyesuaikan gambar dengan ukuran layar */
+    background-position: center;
+    background-attachment: fixed; /* Gambar background tetap saat di-scroll */
+}
+
+header {
+    background-color: #000000; /* Hitam */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #00FFFF; /* Warna cyan */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #00FFFF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* Warna putih saat hover */
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #00d9ff;
+    background: rgba(0, 0, 0, 0.5); /* Background hitam semi-transparan */
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.cerpen-section {
+    padding: 50px 20px;
+    background-color: #000000; /* Latar hitam */
+}
+
+.cerpen-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #00FFFF; /* Warna cyan */
+}
+
+.cerpen-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-height: 500px; /* Batasan tinggi list */
+    overflow-y: scroll; /* Membuat list bisa digulir */
+}
+
+.cerpen-item {
+    background-color: #1e1e1e; /* Hitam abu-abu */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cerpen-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cerpen-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #00FFFF;
+}
+
+.cerpen-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #e5e5e5;
+}
+
+.cerpen-item a {
+    text-decoration: none;
+    color: #00FFFF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.cerpen-item a:hover {
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000; /* Hitam */
+    color: #00FFFF; /* Cyan */
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cerpen-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
